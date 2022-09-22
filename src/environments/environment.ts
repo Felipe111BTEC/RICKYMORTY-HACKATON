@@ -1,9 +1,17 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
+//Se importa la información de la version
+import versionJSON from "../assets/version.json";
 
 export const environment = {
-  production: false
+  production: false,
+  //Obtiene la version de la APP
+  version: versionJSON.version,
+  //URL de la API
+  API: 'https://rickandmortyapi.com/api',
+  //Dirección de ejecución
+  HOST: ''
 };
 
 /*

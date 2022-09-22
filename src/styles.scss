@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+//? Delcaraciones de tamaños para la pantalla
+html, body {
+    //Tamaño
+    width: 100%;
+    height: 100%;
+    //Se elimina el margen
+    margin: 0;
+    padding: 0;
+}
+
+//? Se importan los estilos de bostrap
+@import "~bootstrap/scss/bootstrap";
+
+//?Se importan fundamentos de estilos
+@import "./fundamentals/colors.scss";
+@import "./fundamentals/fonts.scss";
+@import "./fundamentals/size.scss";
+@import "./fundamentals/modal.scss";
+
+//? Fuente regular para la poágina
+* {
+    font-family: "PrincipalFont-Regular";
+}
